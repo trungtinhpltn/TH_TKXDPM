@@ -1,0 +1,1303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="892.0" prefWidth="1264.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="">
+	<top>
+		<BorderPane prefHeight="83.0" prefWidth="920.0" style="-fx-background-color: #ffe3e6;-fx-border-color: #d3909d ;" BorderPane.alignment="CENTER">
+			<center>
+				<BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+					<center>
+						<TextField minHeight="40.0" BorderPane.alignment="CENTER">
+                     <BorderPane.margin>
+                        <Insets right="20.0" />
+                     </BorderPane.margin></TextField>
+					</center>
+					<right>
+						<Button minHeight="40.0" minWidth="80.0" mnemonicParsing="false" text="Search" BorderPane.alignment="CENTER">
+                     <font>
+                        <Font size="13.0" />
+                     </font></Button>
+					</right>
+				</BorderPane>
+			</center>
+			<left>
+				<ImageView fitHeight="80.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../image/shop.png" />
+               </image>
+               <BorderPane.margin>
+                  <Insets bottom="10.0" left="20.0" right="20.0" top="10.0" />
+               </BorderPane.margin></ImageView>
+			</left>
+         <right>
+            <StackPane prefHeight="85.0" prefWidth="130.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Text fill="#0b7acd" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="10" StackPane.alignment="TOP_CENTER">
+                     <StackPane.margin>
+                        <Insets left="10.0" top="5.0" />
+                     </StackPane.margin>
+                     <font>
+                        <Font size="13.0" />
+                     </font>
+                  </Text>
+                  <ImageView fitHeight="112.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/shopping-cart.png" />
+                     </image>
+                  </ImageView>
+               </children>
+               <BorderPane.margin>
+                  <Insets left="20.0" />
+               </BorderPane.margin>
+            </StackPane>
+         </right>
+		</BorderPane>
+	</top>
+   <center>
+      <GridPane styleClass="mygridStyle" stylesheets="@../css/homescreen.css" BorderPane.alignment="CENTER">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-padding: 10;" styleClass="item">
+               <right>
+                  <BorderPane maxWidth="131.0" minHeight="30.0" prefHeight="240.0" prefWidth="131.0" BorderPane.alignment="CENTER">
+                     <top>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Book" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets />
+                           </BorderPane.margin>
+                        </Text>
+                     </top>
+                     <center>
+                        <VBox prefHeight="137.0" prefWidth="113.0" style="-fx-border-color: #a4dfab;" BorderPane.alignment="CENTER">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="114.0">
+                                 <children>
+                                    <Label minWidth="40.0" text="Price:">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="30">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="114.0">
+                                 <children>
+                                    <Label minWidth="40.0" text="Avail:">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label prefHeight="19.0" prefWidth="15.0" text="60">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <BorderPane nodeOrientation="LEFT_TO_RIGHT" prefHeight="46.0" prefWidth="200.0">
+                                 <center>
+                                    <TextField alignment="CENTER" text="1" BorderPane.alignment="CENTER">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </TextField>
+                                 </center>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                                 <left>
+                                    <Button mnemonicParsing="false" prefWidth="30.0" text="-" BorderPane.alignment="CENTER" />
+                                 </left>
+                                 <right>
+                                    <Button mnemonicParsing="false" prefWidth="30.0" text="+" BorderPane.alignment="CENTER" />
+                                 </right>
+                              </BorderPane>
+                              <HBox alignment="CENTER" prefHeight="36.0" prefWidth="111.0">
+                                 <children>
+                                    <Button maxHeight="1.7976931348623157E308" mnemonicParsing="false" prefWidth="5555555.0" text="Add to card" />
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <BorderPane.margin>
+                              <Insets />
+                           </BorderPane.margin>
+                        </VBox>
+                     </center>
+                  </BorderPane>
+               </right>
+               <center>
+                  <ImageView fitHeight="128.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@../image/av1.jpg" />
+                     </image>
+                     <BorderPane.margin>
+                        <Insets right="10.0" />
+                     </BorderPane.margin>
+                  </ImageView>
+               </center>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+            </BorderPane>
+            <BorderPane styleClass="item" GridPane.columnIndex="1">
+               <right>
+                  <BorderPane maxWidth="131.0" minHeight="30.0" prefHeight="240.0" prefWidth="131.0" BorderPane.alignment="CENTER">
+                     <top>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Book" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets />
+                           </BorderPane.margin>
+                        </Text>
+                     </top>
+                     <center>
+                        <VBox prefHeight="137.0" prefWidth="113.0" style="-fx-border-color: #a4dfab;" BorderPane.alignment="CENTER">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="114.0">
+                                 <children>
+                                    <Label minWidth="40.0" text="Price:">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="30">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="114.0">
+                                 <children>
+                                    <Label minWidth="40.0" text="Avail:">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label prefHeight="19.0" prefWidth="15.0" text="60">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <BorderPane nodeOrientation="LEFT_TO_RIGHT" prefHeight="46.0" prefWidth="200.0">
+                                 <center>
+                                    <TextField alignment="CENTER" text="1" BorderPane.alignment="CENTER">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </TextField>
+                                 </center>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                                 <left>
+                                    <Button mnemonicParsing="false" prefWidth="30.0" text="-" BorderPane.alignment="CENTER" />
+                                 </left>
+                                 <right>
+                                    <Button mnemonicParsing="false" prefWidth="30.0" text="+" BorderPane.alignment="CENTER" />
+                                 </right>
+                              </BorderPane>
+                              <HBox alignment="CENTER" prefHeight="36.0" prefWidth="111.0">
+                                 <children>
+                                    <Button maxHeight="1.7976931348623157E308" mnemonicParsing="false" prefWidth="5555555.0" text="Add to card" />
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <BorderPane.margin>
+                              <Insets />
+                           </BorderPane.margin>
+                        </VBox>
+                     </center>
+                  </BorderPane>
+               </right>
+               <center>
+                  <ImageView fitHeight="128.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@../image/av1.jpg" />
+                     </image>
+                     <BorderPane.margin>
+                        <Insets right="10.0" />
+                     </BorderPane.margin>
+                  </ImageView>
+               </center>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" styleClass="item" GridPane.columnIndex="2">
+               <right>
+                  <BorderPane maxWidth="131.0" minHeight="30.0" prefHeight="240.0" prefWidth="131.0" BorderPane.alignment="CENTER">
+                     <top>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Book" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets />
+                           </BorderPane.margin>
+                        </Text>
+                     </top>
+                     <center>
+                        <VBox prefHeight="137.0" prefWidth="113.0" style="-fx-border-color: #a4dfab;" BorderPane.alignment="CENTER">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="114.0">
+                                 <children>
+                                    <Label minWidth="40.0" text="Price:">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="30">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="114.0">
+                                 <children>
+                                    <Label minWidth="40.0" text="Avail:">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label prefHeight="19.0" prefWidth="15.0" text="60">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <BorderPane nodeOrientation="LEFT_TO_RIGHT" prefHeight="46.0" prefWidth="200.0">
+                                 <center>
+                                    <TextField alignment="CENTER" text="1" BorderPane.alignment="CENTER">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </TextField>
+                                 </center>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                                 <left>
+                                    <Button mnemonicParsing="false" prefWidth="30.0" text="-" BorderPane.alignment="CENTER" />
+                                 </left>
+                                 <right>
+                                    <Button mnemonicParsing="false" prefWidth="30.0" text="+" BorderPane.alignment="CENTER" />
+                                 </right>
+                              </BorderPane>
+                              <HBox alignment="CENTER" prefHeight="36.0" prefWidth="111.0">
+                                 <children>
+                                    <Button maxHeight="1.7976931348623157E308" mnemonicParsing="false" prefWidth="5555555.0" text="Add to card" />
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <BorderPane.margin>
+                              <Insets />
+                           </BorderPane.margin>
+                        </VBox>
+                     </center>
+                  </BorderPane>
+               </right>
+               <center>
+                  <ImageView fitHeight="128.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@../image/av1.jpg" />
+                     </image>
+                     <BorderPane.margin>
+                        <Insets right="10.0" />
+                     </BorderPane.margin>
+                  </ImageView>
+               </center>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" styleClass="item" GridPane.columnIndex="3">
+               <right>
+                  <BorderPane maxWidth="131.0" minHeight="30.0" prefHeight="240.0" prefWidth="131.0" BorderPane.alignment="CENTER">
+                     <top>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Book" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets />
+                           </BorderPane.margin>
+                        </Text>
+                     </top>
+                     <center>
+                        <VBox prefHeight="137.0" prefWidth="113.0" style="-fx-border-color: #a4dfab;" BorderPane.alignment="CENTER">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="114.0">
+                                 <children>
+                                    <Label minWidth="40.0" text="Price:">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="30">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="114.0">
+                                 <children>
+                                    <Label minWidth="40.0" text="Avail:">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label prefHeight="19.0" prefWidth="15.0" text="60">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <BorderPane nodeOrientation="LEFT_TO_RIGHT" prefHeight="46.0" prefWidth="200.0">
+                                 <center>
+                                    <TextField alignment="CENTER" text="1" BorderPane.alignment="CENTER">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </TextField>
+                                 </center>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                                 <left>
+                                    <Button mnemonicParsing="false" prefWidth="30.0" text="-" BorderPane.alignment="CENTER" />
+                                 </left>
+                                 <right>
+                                    <Button mnemonicParsing="false" prefWidth="30.0" text="+" BorderPane.alignment="CENTER" />
+                                 </right>
+                              </BorderPane>
+                              <HBox alignment="CENTER" prefHeight="36.0" prefWidth="111.0">
+                                 <children>
+                                    <Button maxHeight="1.7976931348623157E308" mnemonicParsing="false" prefWidth="5555555.0" text="Add to card" />
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <BorderPane.margin>
+                              <Insets />
+                           </BorderPane.margin>
+                        </VBox>
+                     </center>
+                  </BorderPane>
+               </right>
+               <center>
+                  <ImageView fitHeight="128.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@../image/av1.jpg" />
+                     </image>
+                     <BorderPane.margin>
+                        <Insets right="10.0" />
+                     </BorderPane.margin>
+                  </ImageView>
+               </center>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" styleClass="item" GridPane.rowIndex="1">
+               <right>
+                  <BorderPane maxWidth="131.0" minHeight="30.0" prefHeight="240.0" prefWidth="131.0" BorderPane.alignment="CENTER">
+                     <top>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Book" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets />
+                           </BorderPane.margin>
+                        </Text>
+                     </top>
+                     <center>
+                        <VBox prefHeight="137.0" prefWidth="113.0" style="-fx-border-color: #a4dfab;" BorderPane.alignment="CENTER">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="114.0">
+                                 <children>
+                                    <Label minWidth="40.0" text="Price:">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="30">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="114.0">
+                                 <children>
+                                    <Label minWidth="40.0" text="Avail:">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label prefHeight="19.0" prefWidth="15.0" text="60">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <BorderPane nodeOrientation="LEFT_TO_RIGHT" prefHeight="46.0" prefWidth="200.0">
+                                 <center>
+                                    <TextField alignment="CENTER" text="1" BorderPane.alignment="CENTER">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </TextField>
+                                 </center>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                                 <left>
+                                    <Button mnemonicParsing="false" prefWidth="30.0" text="-" BorderPane.alignment="CENTER" />
+                                 </left>
+                                 <right>
+                                    <Button mnemonicParsing="false" prefWidth="30.0" text="+" BorderPane.alignment="CENTER" />
+                                 </right>
+                              </BorderPane>
+                              <HBox alignment="CENTER" prefHeight="36.0" prefWidth="111.0">
+                                 <children>
+                                    <Button maxHeight="1.7976931348623157E308" mnemonicParsing="false" prefWidth="5555555.0" text="Add to card" />
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <BorderPane.margin>
+                              <Insets />
+                           </BorderPane.margin>
+                        </VBox>
+                     </center>
+                  </BorderPane>
+               </right>
+               <center>
+                  <ImageView fitHeight="128.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@../image/av1.jpg" />
+                     </image>
+                     <BorderPane.margin>
+                        <Insets right="10.0" />
+                     </BorderPane.margin>
+                  </ImageView>
+               </center>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" styleClass="item" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <right>
+                  <BorderPane maxWidth="131.0" minHeight="30.0" prefHeight="240.0" prefWidth="131.0" BorderPane.alignment="CENTER">
+                     <top>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Book" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets />
+                           </BorderPane.margin>
+                        </Text>
+                     </top>
+                     <center>
+                        <VBox prefHeight="137.0" prefWidth="113.0" style="-fx-border-color: #a4dfab;" BorderPane.alignment="CENTER">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="114.0">
+                                 <children>
+                                    <Label minWidth="40.0" text="Price:">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="30">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="114.0">
+                                 <children>
+                                    <Label minWidth="40.0" text="Avail:">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label prefHeight="19.0" prefWidth="15.0" text="60">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <BorderPane nodeOrientation="LEFT_TO_RIGHT" prefHeight="46.0" prefWidth="200.0">
+                                 <center>
+                                    <TextField alignment="CENTER" text="1" BorderPane.alignment="CENTER">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </TextField>
+                                 </center>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                                 <left>
+                                    <Button mnemonicParsing="false" prefWidth="30.0" text="-" BorderPane.alignment="CENTER" />
+                                 </left>
+                                 <right>
+                                    <Button mnemonicParsing="false" prefWidth="30.0" text="+" BorderPane.alignment="CENTER" />
+                                 </right>
+                              </BorderPane>
+                              <HBox alignment="CENTER" prefHeight="36.0" prefWidth="111.0">
+                                 <children>
+                                    <Button maxHeight="1.7976931348623157E308" mnemonicParsing="false" prefWidth="5555555.0" text="Add to card" />
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <BorderPane.margin>
+                              <Insets />
+                           </BorderPane.margin>
+                        </VBox>
+                     </center>
+                  </BorderPane>
+               </right>
+               <center>
+                  <ImageView fitHeight="128.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@../image/av1.jpg" />
+                     </image>
+                     <BorderPane.margin>
+                        <Insets right="10.0" />
+                     </BorderPane.margin>
+                  </ImageView>
+               </center>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" styleClass="item" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <right>
+                  <BorderPane maxWidth="131.0" minHeight="30.0" prefHeight="240.0" prefWidth="131.0" BorderPane.alignment="CENTER">
+                     <top>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Book" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets />
+                           </BorderPane.margin>
+                        </Text>
+                     </top>
+                     <center>
+                        <VBox prefHeight="137.0" prefWidth="113.0" style="-fx-border-color: #a4dfab;" BorderPane.alignment="CENTER">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="114.0">
+                                 <children>
+                                    <Label minWidth="40.0" text="Price:">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="30">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="114.0">
+                                 <children>
+                                    <Label minWidth="40.0" text="Avail:">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label prefHeight="19.0" prefWidth="15.0" text="60">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <BorderPane nodeOrientation="LEFT_TO_RIGHT" prefHeight="46.0" prefWidth="200.0">
+                                 <center>
+                                    <TextField alignment="CENTER" text="1" BorderPane.alignment="CENTER">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </TextField>
+                                 </center>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                                 <left>
+                                    <Button mnemonicParsing="false" prefWidth="30.0" text="-" BorderPane.alignment="CENTER" />
+                                 </left>
+                                 <right>
+                                    <Button mnemonicParsing="false" prefWidth="30.0" text="+" BorderPane.alignment="CENTER" />
+                                 </right>
+                              </BorderPane>
+                              <HBox alignment="CENTER" prefHeight="36.0" prefWidth="111.0">
+                                 <children>
+                                    <Button maxHeight="1.7976931348623157E308" mnemonicParsing="false" prefWidth="5555555.0" text="Add to card" />
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <BorderPane.margin>
+                              <Insets />
+                           </BorderPane.margin>
+                        </VBox>
+                     </center>
+                  </BorderPane>
+               </right>
+               <center>
+                  <ImageView fitHeight="128.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@../image/av1.jpg" />
+                     </image>
+                     <BorderPane.margin>
+                        <Insets right="10.0" />
+                     </BorderPane.margin>
+                  </ImageView>
+               </center>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" styleClass="item" GridPane.columnIndex="3" GridPane.rowIndex="1">
+               <right>
+                  <BorderPane maxWidth="131.0" minHeight="30.0" prefHeight="240.0" prefWidth="131.0" BorderPane.alignment="CENTER">
+                     <top>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Book" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets />
+                           </BorderPane.margin>
+                        </Text>
+                     </top>
+                     <center>
+                        <VBox prefHeight="137.0" prefWidth="113.0" style="-fx-border-color: #a4dfab;" BorderPane.alignment="CENTER">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="114.0">
+                                 <children>
+                                    <Label minWidth="40.0" text="Price:">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="30">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="114.0">
+                                 <children>
+                                    <Label minWidth="40.0" text="Avail:">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label prefHeight="19.0" prefWidth="15.0" text="60">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <BorderPane nodeOrientation="LEFT_TO_RIGHT" prefHeight="46.0" prefWidth="200.0">
+                                 <center>
+                                    <TextField alignment="CENTER" text="1" BorderPane.alignment="CENTER">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </TextField>
+                                 </center>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                                 <left>
+                                    <Button mnemonicParsing="false" prefWidth="30.0" text="-" BorderPane.alignment="CENTER" />
+                                 </left>
+                                 <right>
+                                    <Button mnemonicParsing="false" prefWidth="30.0" text="+" BorderPane.alignment="CENTER" />
+                                 </right>
+                              </BorderPane>
+                              <HBox alignment="CENTER" prefHeight="36.0" prefWidth="111.0">
+                                 <children>
+                                    <Button maxHeight="1.7976931348623157E308" mnemonicParsing="false" prefWidth="5555555.0" text="Add to card" />
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <BorderPane.margin>
+                              <Insets />
+                           </BorderPane.margin>
+                        </VBox>
+                     </center>
+                  </BorderPane>
+               </right>
+               <center>
+                  <ImageView fitHeight="128.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@../image/av1.jpg" />
+                     </image>
+                     <BorderPane.margin>
+                        <Insets right="10.0" />
+                     </BorderPane.margin>
+                  </ImageView>
+               </center>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" styleClass="item" GridPane.rowIndex="2">
+               <right>
+                  <BorderPane maxWidth="131.0" minHeight="30.0" prefHeight="240.0" prefWidth="131.0" BorderPane.alignment="CENTER">
+                     <top>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Book" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets />
+                           </BorderPane.margin>
+                        </Text>
+                     </top>
+                     <center>
+                        <VBox prefHeight="137.0" prefWidth="113.0" style="-fx-border-color: #a4dfab;" BorderPane.alignment="CENTER">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="114.0">
+                                 <children>
+                                    <Label minWidth="40.0" text="Price:">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="30">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="114.0">
+                                 <children>
+                                    <Label minWidth="40.0" text="Avail:">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label prefHeight="19.0" prefWidth="15.0" text="60">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <BorderPane nodeOrientation="LEFT_TO_RIGHT" prefHeight="46.0" prefWidth="200.0">
+                                 <center>
+                                    <TextField alignment="CENTER" text="1" BorderPane.alignment="CENTER">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </TextField>
+                                 </center>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                                 <left>
+                                    <Button mnemonicParsing="false" prefWidth="30.0" text="-" BorderPane.alignment="CENTER" />
+                                 </left>
+                                 <right>
+                                    <Button mnemonicParsing="false" prefWidth="30.0" text="+" BorderPane.alignment="CENTER" />
+                                 </right>
+                              </BorderPane>
+                              <HBox alignment="CENTER" prefHeight="36.0" prefWidth="111.0">
+                                 <children>
+                                    <Button maxHeight="1.7976931348623157E308" mnemonicParsing="false" prefWidth="5555555.0" text="Add to card" />
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <BorderPane.margin>
+                              <Insets />
+                           </BorderPane.margin>
+                        </VBox>
+                     </center>
+                  </BorderPane>
+               </right>
+               <center>
+                  <ImageView fitHeight="128.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@../image/av1.jpg" />
+                     </image>
+                     <BorderPane.margin>
+                        <Insets right="10.0" />
+                     </BorderPane.margin>
+                  </ImageView>
+               </center>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-padding: 10;" styleClass="item" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <right>
+                  <BorderPane maxWidth="131.0" minHeight="30.0" prefHeight="240.0" prefWidth="131.0" BorderPane.alignment="CENTER">
+                     <top>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Book" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets />
+                           </BorderPane.margin>
+                        </Text>
+                     </top>
+                     <center>
+                        <VBox prefHeight="137.0" prefWidth="113.0" style="-fx-border-color: #a4dfab;" BorderPane.alignment="CENTER">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="114.0">
+                                 <children>
+                                    <Label minWidth="40.0" text="Price:">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="30">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="114.0">
+                                 <children>
+                                    <Label minWidth="40.0" text="Avail:">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label prefHeight="19.0" prefWidth="15.0" text="60">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <BorderPane nodeOrientation="LEFT_TO_RIGHT" prefHeight="46.0" prefWidth="200.0">
+                                 <center>
+                                    <TextField alignment="CENTER" text="1" BorderPane.alignment="CENTER">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </TextField>
+                                 </center>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                                 <left>
+                                    <Button mnemonicParsing="false" prefWidth="30.0" text="-" BorderPane.alignment="CENTER" />
+                                 </left>
+                                 <right>
+                                    <Button mnemonicParsing="false" prefWidth="30.0" text="+" BorderPane.alignment="CENTER" />
+                                 </right>
+                              </BorderPane>
+                              <HBox alignment="CENTER" prefHeight="36.0" prefWidth="111.0">
+                                 <children>
+                                    <Button maxHeight="1.7976931348623157E308" mnemonicParsing="false" prefWidth="5555555.0" text="Add to card" />
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <BorderPane.margin>
+                              <Insets />
+                           </BorderPane.margin>
+                        </VBox>
+                     </center>
+                  </BorderPane>
+               </right>
+               <center>
+                  <ImageView fitHeight="128.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@../image/av1.jpg" />
+                     </image>
+                     <BorderPane.margin>
+                        <Insets right="10.0" />
+                     </BorderPane.margin>
+                  </ImageView>
+               </center>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+            </BorderPane>
+            <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-padding: 10;" styleClass="item" GridPane.columnIndex="2" GridPane.rowIndex="2">
+               <right>
+                  <BorderPane maxWidth="131.0" minHeight="30.0" prefHeight="240.0" prefWidth="131.0" BorderPane.alignment="CENTER">
+                     <top>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Book" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets />
+                           </BorderPane.margin>
+                        </Text>
+                     </top>
+                     <center>
+                        <VBox prefHeight="137.0" prefWidth="113.0" style="-fx-border-color: #a4dfab;" BorderPane.alignment="CENTER">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="114.0">
+                                 <children>
+                                    <Label minWidth="40.0" text="Price:">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="30">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="114.0">
+                                 <children>
+                                    <Label minWidth="40.0" text="Avail:">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label prefHeight="19.0" prefWidth="15.0" text="60">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <BorderPane nodeOrientation="LEFT_TO_RIGHT" prefHeight="46.0" prefWidth="200.0">
+                                 <center>
+                                    <TextField alignment="CENTER" text="1" BorderPane.alignment="CENTER">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </TextField>
+                                 </center>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                                 <left>
+                                    <Button mnemonicParsing="false" prefWidth="30.0" text="-" BorderPane.alignment="CENTER" />
+                                 </left>
+                                 <right>
+                                    <Button mnemonicParsing="false" prefWidth="30.0" text="+" BorderPane.alignment="CENTER" />
+                                 </right>
+                              </BorderPane>
+                              <HBox alignment="CENTER" prefHeight="36.0" prefWidth="111.0">
+                                 <children>
+                                    <Button maxHeight="1.7976931348623157E308" mnemonicParsing="false" prefWidth="5555555.0" text="Add to card" />
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <BorderPane.margin>
+                              <Insets />
+                           </BorderPane.margin>
+                        </VBox>
+                     </center>
+                  </BorderPane>
+               </right>
+               <center>
+                  <ImageView fitHeight="128.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@../image/av1.jpg" />
+                     </image>
+                     <BorderPane.margin>
+                        <Insets right="10.0" />
+                     </BorderPane.margin>
+                  </ImageView>
+               </center>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+            </BorderPane>
+            <BorderPane prefHeight="386.0" prefWidth="569.0" style="-fx-padding: 10;" styleClass="item" GridPane.columnIndex="3" GridPane.rowIndex="2">
+               <right>
+                  <BorderPane maxWidth="131.0" minHeight="30.0" prefHeight="240.0" prefWidth="131.0" BorderPane.alignment="CENTER">
+                     <top>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-weight: bold;" text="Book" BorderPane.alignment="CENTER">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                           <BorderPane.margin>
+                              <Insets />
+                           </BorderPane.margin>
+                        </Text>
+                     </top>
+                     <center>
+                        <VBox prefHeight="137.0" prefWidth="113.0" style="-fx-border-color: #a4dfab;" BorderPane.alignment="CENTER">
+                           <children>
+                              <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="114.0">
+                                 <children>
+                                    <Label minWidth="40.0" text="Price:">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                    <Label text="30">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <HBox alignment="CENTER_LEFT" prefHeight="30.0" prefWidth="114.0">
+                                 <children>
+                                    <Label minWidth="40.0" text="Avail:">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label prefHeight="19.0" prefWidth="15.0" text="60">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                              </HBox>
+                              <BorderPane nodeOrientation="LEFT_TO_RIGHT" prefHeight="46.0" prefWidth="200.0">
+                                 <center>
+                                    <TextField alignment="CENTER" text="1" BorderPane.alignment="CENTER">
+                                       <font>
+                                          <Font size="13.0" />
+                                       </font>
+                                    </TextField>
+                                 </center>
+                                 <VBox.margin>
+                                    <Insets bottom="10.0" />
+                                 </VBox.margin>
+                                 <left>
+                                    <Button mnemonicParsing="false" prefWidth="30.0" text="-" BorderPane.alignment="CENTER" />
+                                 </left>
+                                 <right>
+                                    <Button mnemonicParsing="false" prefWidth="30.0" text="+" BorderPane.alignment="CENTER" />
+                                 </right>
+                              </BorderPane>
+                              <HBox alignment="CENTER" prefHeight="36.0" prefWidth="111.0">
+                                 <children>
+                                    <Button maxHeight="1.7976931348623157E308" mnemonicParsing="false" prefWidth="5555555.0" text="Add to card" />
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                           <BorderPane.margin>
+                              <Insets />
+                           </BorderPane.margin>
+                        </VBox>
+                     </center>
+                  </BorderPane>
+               </right>
+               <center>
+                  <ImageView fitHeight="128.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+                     <image>
+                        <Image url="@../image/av1.jpg" />
+                     </image>
+                     <BorderPane.margin>
+                        <Insets right="10.0" />
+                     </BorderPane.margin>
+                  </ImageView>
+               </center>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </GridPane.margin>
+            </BorderPane>
+         </children>
+         <BorderPane.margin>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </BorderPane.margin>
+      </GridPane>
+   </center>
+</BorderPane>
